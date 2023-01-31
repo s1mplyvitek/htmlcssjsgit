@@ -1,0 +1,28 @@
+p {
+    font-family:cursive;
+    
+    font-size:24px;
+    
+    color:#20c7d6;
+    }
+    
+    #odin {
+    color:#206fd6;
+    
+    font-size: 20px;}
+    
+    div {
+    font-family:serif;
+    
+    font-size:30;
+    
+    color:#b197ba;
+    
+    background-color:#d5c1db;
+    
+    border:2px solid #30073d;
+    
+    margin-left:50px;
+    margin-right: 50px;
+    padding: 15px;	
+    }
