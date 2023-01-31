@@ -1,0 +1,23 @@
+.block {
+	display: flex;
+	height: 90vh;
+	justify-content: space-around;
+	
+}
+.block div{
+	font-size: 45px;
+	border:1px solid black;
+	padding: 40 px;
+	flex-basis: 30%;
+
+
+}
+.item_1{
+	order:3;
+}
+.item_2{
+	order: 2;
+}
+.item_3{
+	order:1;
+}

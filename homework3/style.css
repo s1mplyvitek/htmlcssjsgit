@@ -1,0 +1,56 @@
+body{
+	padding: 30px;
+	font-family: arial;
+}
+
+
+.упаковка {
+	border: 5px solid green;
+	max-width: 1000px;
+	margin: 0px auto;
+	height: 1500px;
+	position: relative;
+}
+.упаковка div{
+	line-height: 50px;
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;	
+}
+.штука_1 {
+	background-color: #f56c42;
+	line-height: 50px;
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+	position: static;
+}
+.штука_2 {
+	background-color: #e3d324;
+	position: absolute;
+	bottom: 30px;
+	left: 30px;
+	width: 100%;
+}
+.штука_3 {
+	background-color: #4ae324;
+	position: fixed;
+	width:100%;
+	top:0;
+	left:0;
+}
+.штука_4 {
+	background-color: #24e0e3;
+	position: relative;
+	left: 50px;
+	top: 100px;
+	z-index: 0;
+}
+.штука_5 {
+	background-color: #d324e3;
+	position: sticky;
+	top:40px;
+	left:40px;
+	z-index: 1;
+
+}
