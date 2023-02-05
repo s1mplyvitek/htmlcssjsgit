@@ -39,28 +39,8 @@ button{
 body{
     background-color: gainsboro;
 }
-@media screen and (max-width: 1400px) {
-    .korobka { max-width: 100%;}
-    .groga {max-width: 80%;}
-    button {max-width: 90%;}
-}
-@media screen and (max-width: 1000px) {
-    .korobka {max-width: 100%;}
-    .groga {max-width: 80%;}
-    button {max-width: 90%;}
-}
-@media screen and (max-width: 600px) {
-    .korobka {max-width: 100%;}
-    .groga {max-width: 80%;}
-    button {max-width: 90%;}
-}
 @media screen and (max-width: 450px) {
-    .korobka {max-width: 100%;}
-    .groga {max-width: 80%;}
-    button {max-width: 90%;}
-}
-@media screen and (max-width: 361px) {
-    .korobka {max-width: 100%;}
-    .groga {max-width: 70%;}
-    button {max-width: 30%;}
+    .korobka { max-width: 90%;}
+    .groga {max-width: 90%;}
+    button {max-width: 70%;}
 }
