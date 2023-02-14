@@ -1,24 +1,27 @@
-const NAME = `Виктор Очиров`;
+let dish = [
+    {
+        buuza: 'buuza', 
+        price: '70', 
+        expense: '30', 
+        ingridients: ['meat', 'water', 'solt', 'onion',],},
+        
+    { 
+        blackSoup: 'blackSoup', 
+        price: '100', 
+        expense: '40', 
+        ingridients: ['meat', 'water', 'solt',],},
 
-const BACKGROUND = `В 2017 году окончил ЧГМА, и после год
-ординатуры по специальности врач-фтизиатр.`;
-
-const JOB = `работаю контролером в ТЛЦ, а до этого,
-чуть больше года, комлектовщиком.`;
-
-const HOBBY = `люблю занимматься спортом, нравятся чуть 
-ли не все виды, даже киберспорт).
-Чтение, любимые книги: жестокий век, доктор Живаго
-и куда же без музыки фильмов и игр).`;
-
-let age = (2023-1993);
-
-const BIOGRAPHY = `Всем доброго времени суток! Расскажу немного
-о себе). Зовут меня ${NAME}. Сейчас мне
-${age} лет. ${BACKGROUND} Далее 
-последовало 3 года темных времен для меня, а 
-сейчас я ${JOB} В свободное время 
-${HOBBY} 
-`;
-
-console.log(BIOGRAPHY);
+    { 
+        brtuch: 'brtuch', 
+        price: '150', 
+        expense: '60', 
+        ingridients: ['salad', 'bread', 'meat', 'sauce', 'cheese'],},
+];
+console.log(dish);
+//dish.splice(2);
+dish.shift();
+dish.unshift('buuza');
+const price = [70, 100, 150];
+const price2 = [30, 40, 60];
+const sum = price.reduce((total, amount) => total + amount ) - price2.reduce((total, amount) => total + amount);
+console.log(sum)
