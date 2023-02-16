@@ -21,7 +21,7 @@ let dish = [
 
 let copy = dish[0];
 console.log(dish);
-//dish.splice(2);
+
 dish.shift();
 dish.unshift(copy);
 console.log(copy);
@@ -45,6 +45,9 @@ console.log(sum);
 //console.log(dish[2].expense);
 sum = dish[2].price - dish[2].expense;
 console.log(sum);
+dish.splice(1);
+
+
 //let num;
 //num = 3 + 3;
 //console.log(num);
