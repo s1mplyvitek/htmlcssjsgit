@@ -27,7 +27,7 @@ dish.unshift(copy);
 console.log(copy);
 console.log(typeof copy);
 console.log(copy.ingridients);
-delete copy.ingridients[1];
+copy.ingridients.splice(3);
 console.log(copy.ingridients);
 
 //console.log(dish);
@@ -44,9 +44,12 @@ console.log(sum);
 //console.log(dish[2].price);
 //console.log(dish[2].expense);
 sum = dish[2].price - dish[2].expense;
+
 console.log(sum);
+
 dish.splice(1);
 
+alert(JSON.stringify(copy));
 
 //let num;
 //num = 3 + 3;
