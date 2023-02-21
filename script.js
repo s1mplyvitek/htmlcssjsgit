@@ -172,13 +172,13 @@ renderQuestions(0);
 
 
 
-//let cor = prompt('Сколько камер в сердце?');
-//et correctResponse = 4;
+let cor = prompt('Сколько камер в сердце?');
+let correctResponse = 4;
 
-//if (cor == 4 ) {
-//    alert('right');
-//} else if (cor > 4) {
-//    alert('less');
-//} else if (cor < 4) {
-//    alert('more')
-//}
+if (cor == 4 ) {
+    alert('right');
+} else if (cor > 4) {
+    alert('less');
+} else if (cor < 4) {
+    alert('more')
+}
