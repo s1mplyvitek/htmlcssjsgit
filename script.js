@@ -47,7 +47,7 @@ let sumArray = (array) => {
     }
     console.log(sum);
 }
-sumArray(expenseBuuza)
+sumArray(expenseBuuza);
 let expense = sumArray(expenseBuuza);
 
 //let sumArray = (Array) => {
