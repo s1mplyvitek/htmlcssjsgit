@@ -5,50 +5,110 @@ for (let num = 5; num > 4; num++) {
     if (num == 10) break;
     console.log(`перерыв, num = ${num}`);
 }
-let dish = [
-    {
-        name: 'buuza', 
-        price: 70,        
-        ingridients: ['meat', 'water', 'solt', 'onion',],
-        },
-        
-    { 
-        name: 'blackSoup', 
-        price: 100,         
-        ingridients: ['meat', 'water', 'solt',],},
 
-    { 
+
+
+    let buuza = {
+        name: 'buuza', 
+        price: 70, 
+        expense: 0,       
+        ingridients: ['meat', 'water', 'solt', 'onion',],
+    };
+        
+    let blackSoup = { 
+        name: 'blackSoup', 
+        price: 100,
+        expense: 0,         
+        ingridients: ['meat', 'water', 'solt',],
+    };
+
+    let brtuch = { 
         name: 'brtuch', 
-        price: 150,       
-        ingridients: ['salad', 'bread', 'meat', 'sauce', 'cheese'],}
-]       
+        price: 150,  
+        expense: 0,     
+        ingridients: ['salad', 'bread', 'meat', 'sauce', 'cheese'],
+    };
+
+let dish = [
+    buuza,
+    blackSoup,
+    brtuch,
+];
+       
+let expense = {
+    meat: 30,
+    water: 5,
+    solt: 5,
+    onion: 10,
+    salad: 15,
+    bread: 10,
+    sauce: 15,
+    cheese: 10,
+};
+
+for (let i = 0; i < dish.length; i++) {
+    let sum = 0;
+    for (let s = 0; s < dish[i].ingridients.length; s++) {
+        sum += expense[dish[i].ingridients[s]];
+    }
+    dish[i].expense = sum;
+};
+
+console.log(`Стоимость ингредиентов: ${JSON.stringify(dish)}`);
+
+for (let i = 0; i < dish.length; i++) {
+    
+    dish[i].connectProfit = dish[i].price - dish[i].expense;
+};
+
+console.log(`${JSON.stringify(dish)}`);
+
+//for ( let i = 0; i < arrayIngred.length; i++) {
+//    expense += arrayIngred[i];
+//
+//}
+//console.log(expense);
+//
+//let sumArray = (array) => {
+//    let sum = expense;
+//    for(let i = 0; i < array.length; i++){
+//        sum += array[i]
+//    }
+//    console.log(sum);
+//}
+//sumArray(arrayIngred);
+
+//let qwer = [1, 2, 3, 4, 5];
+//let sum = 0;
+//
+//for (let i = 0; i < qwer.length; i++) {
+//    sum += qwer[i];
+//}
+//console.log(sum)
+
 
 
 //for (let i = 0; i < dish.length; i++) {
-//    dish[i].price += dish[i]
+//    dish[0,1,2] += dish[0,1,2]
 //}
-//console.log(dish[i].price);
+//console.log(dish[i].ingridients);
 
-const meat = 30;
-const water = 5;
-const solt = 5;
-const onion = 15;
-const salad = 15;
-const bread = 10;
-const sauce = 15;
-const cheese = 10;
 
-let expenseBuuza = [meat, water, solt, onion,];
 
-let sumArray = (array) => {
-    let sum = 0;
-    for(let i = 0; i < array.length; i++){
-        sum += array[i]
-    }
-    console.log(sum);
-}
-sumArray(expenseBuuza);
-let expense = sumArray(expenseBuuza);
+//let expenseBuuza = [meat, water, solt, onion,];
+//
+//let sumArray = (array) => {
+//    let sum = dish[i].ingridients;
+//    for(let i = 0; i < array.length; i++){
+//        sum += array[i]
+//    }
+//    console.log(sum);
+//}
+//sumArray(dish);
+//let expense = sumArray(expenseBuuza);
+
+//let sumo = (cheese - sauce);
+//console.log(sumo);
 
 //let sumArray = (Array) => {
 //    let price = dish[i];
