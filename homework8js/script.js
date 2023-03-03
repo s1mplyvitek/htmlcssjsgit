@@ -63,18 +63,6 @@ for (let i = 0; i < dish.length; i++) {
 
 console.log(`${JSON.stringify(dish)}`);
 
-let nomer = [1,2,3];
-
-let global = "";
-
-for (let i = 0; i < dish.length; i++) {    
-    let local = `Блюдо №${nomer[i]}: ${dish[i].name}**********стоимость: ${dish[i].price}\n`;
-    global += local; 
-};
-
-console.log(`Меню:\n${global}`);
-
-
 //for ( let i = 0; i < arrayIngred.length; i++) {
 //    expense += arrayIngred[i];
 //
