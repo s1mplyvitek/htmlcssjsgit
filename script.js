@@ -1,20 +1,20 @@
 //Напишите функцию принимающую два числа и возвращающую меньшее из них
 
-//function ADCosmonaut(arterialPressure) {
-//	if (arterialPressure == 80) {
-//		return true;
-//	} else if (arterialPressure == 120) {
-//		return false, alert('это систола');
-//	} 
-//}
-//
-//let arterialPressure = prompt('Нужно диастолическое давление космонавта');
-//
-//if (ADCosmonaut(arterialPressure)) {
-//	alert('Nice');
-//}  else {
-//	alert('Ты точно учился в меде?');
-//}
+function ADCosmonaut(arterialPressure) {
+	if (arterialPressure == 80) {
+		return true;
+	} else if (arterialPressure == 120) {
+		return false, alert('это систола');
+	} 
+}
+
+let arterialPressure = prompt('Нужно диастолическое давление космонавта');
+
+if (ADCosmonaut(arterialPressure)) {
+	alert('Nice');
+}  else {
+	alert('Ты точно учился в меде?');
+}
 
 
 
