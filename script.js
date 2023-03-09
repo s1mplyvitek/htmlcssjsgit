@@ -1,5 +1,5 @@
 //Напишите функцию принимающую два числа и возвращающую меньшее из них
-
+//
 function ADCosmonaut(arterialPressure) {
 	if (arterialPressure == 80) {
 		return true;
