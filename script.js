@@ -1,77 +1,143 @@
-//Напишите функцию принимающую два числа и возвращающую меньшее из них
+//let names = prompt('What is your name?', '');
+
+
 //
-function ADCosmonaut(arterialPressure) {
-	if (arterialPressure == 80) {
-		return true;
-	} else if (arterialPressure == 120) {
-		return false, alert('это систола');
-	} 
-}
+//for (let key in dataStore) {
+//    let names = prompt('What is your name?', '');
+//    if (names === key) {
+//        let password = prompt('Enter password.');
+//        if (password == dataStore[key]) {
+//            alert('You are logged in.');
+//        } else if(password === '' || password === null) {
+//            alert('Exit.');
+//        } else {
+//            alert('Wrong password.');
+//        }
+//    } else if(names === '' || names === null) {
+//        alert('Exit.');
+//    } else {
+//        alert('No such user exists.');
+//    }
+//};
+let names = prompt('What is your name?', '');
+let password = prompt('Enter password.', '');
 
-let arterialPressure = prompt('Нужно диастолическое давление космонавта');
-
-if (ADCosmonaut(arterialPressure)) {
-	alert('Nice');
-}  else {
-	alert('Ты точно учился в меде?');
-}
-
-
-
-let buuza = {
-	name: 'buuza', 
-	price: 70, 
-	expense: 0,       
-	ingridients: ['meat', 'water', 'solt', 'onion',],
-};
-	
-let blackSoup = { 
-	name: 'blackSoup', 
-	price: 100,
-	expense: 0,         
-	ingridients: ['meat', 'water', 'solt',],
+let dataStore = {
+    Keanu: 'neo',
+    Christian: 'batman',
+    Wilson: 'ball',
 };
 
-let brtuch = { 
-	name: 'brtuch', 
-	price: 150,  
-	expense: 0,     
-	ingridients: ['salad', 'bread', 'meat', 'sauce', 'cheese'],
-};
+if (names in dataStore && dataStore[names] == password) {
+    alert('You are logged in')
+} else if (!(names in dataStore)) {
+    alert('No such user exists.')
+} else if (dataStore[names] !== password) {
+    alert('Wrong password.')
+}; 
+    
+ 
 
-let dish = [
-buuza,
-blackSoup,
-brtuch,
-];
-   
-let expenseIngr = {
-meat: 30,
-water: 5,
-solt: 5,
-onion: 10,
-salad: 15,
-bread: 10,
-sauce: 15,
-cheese: 10,
-};
 
-for (let i = 0; i < dish.length; i++) {
-let sum = 0;
-for (let s = 0; s < dish[i].ingridients.length; s++) {
-	sum += expenseIngr[dish[i].ingridients[s]];
-}
-dish[i].expense = sum;
-};
+//if (names == 'Keanu' && password == 'neo') {    
+//    console.log('hi')
+//} else if(password !== 'neo') {
+//    console.log('passwhere ?')
+//} else {
+//    console.log('user not')
+//}
 
-console.log(`Стоимость ингредиентов: ${JSON.stringify(dish)}`);
 
-function funProfit(price,expense) {
-	return price - expense;
-}
+//
+//for (let key in dataStore) {
+//    if (names == Keanu && Christian && Wilson) {
+//        let password = prompt('Enter password.');
+//        if (password == dataStore[key]) {
+//            alert('You are logged in.');
+//        } else if(password === '' || password === null) {
+//            alert('Exit.');
+//        } else {
+//            alert('Wrong password.');
+//        }
+//    } else if(names === '' || names === null) {
+//        alert('Exit.');
+//    } else {
+//        alert('No such user exists.');
+//    }
+//};
+//
 
-for (let i = 0; i < dish.length; i++) {
-	dish[i].funConnectProfit = funProfit(dish[i].price, dish[i].expense);
-};
-console.log(`Стоимость ингредиентов: ${JSON.stringify(dish)}`);
+//if (names == '') {
+//    let password = prompt('Enter password.');    
+//    if (password == '') {
+//        alert('You are logged in.');
+//    } else if(password === '' || password === null) {
+//        alert('Отмена');
+//    } else {
+//        alert('Wrong password.');
+//    }
+//} else if(names === '' || names === null) {
+//    alert('Отмена');
+//} else {
+//    alert('No such user exists.');
+//};
+//let data = {
+//   price1: 1,
+//   price2: 0,
+//   price3: "",
+//   price4: 1,
+//   price5: 5
+//};
+//for (let key in data) {
+//   if (data[key] !== '' && data[key] !== 0 && data[key] !== 1) {
+//       console.log(key + 'aw ' + data[key])
+//     
+//   }       
+//
+
+
+//for (key in dataStore) {
+//    console.log(dataStore[key]);
+//    console.log(key);
+//}
+//let key = 'Keanu';
+//alert(dataStore[key]);
+
+
+
+//
+//if (dataStore.Keanu == ) {
+//    let password = prompt('Enter password');
+//    if (password == 'neo', 'batman') {
+//        alert('Вы вошли')
+//    } else {
+//        alert('Неправильный пароль')
+//    }
+//} else {
+//    alert('Такого пользователя не существует')
+//}
+
+
+//let key = 'Keanu'
+
+
+//if (names == 'Christian') {
+//    let password = prompt('Enter password');
+//    if (password == 'batman') {
+//        alert('Вы вошли')
+//    } else {
+//        alert('Неправильный пароль')
+//    }
+//} else {
+//    alert('Такого пользователя не существует')
+//};
+
+
+//if (names = 'keanu' || 'Christian' || 'Wilson') {
+//    alert('Такой пользователь есть');    
+//} else {
+//    alert('Такого пользователя не cуществует')
+//}
+//
+//
 

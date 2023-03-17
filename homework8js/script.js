@@ -63,58 +63,58 @@ for (let i = 0; i < dish.length; i++) {
 
 console.log(`${JSON.stringify(dish)}`);
 
-//for ( let i = 0; i < arrayIngred.length; i++) {
-//    expense += arrayIngred[i];
+
+
+
+
+//let dish1 = {
+//    name: 'dishA',
+//    price: 50,
+//    cookingPrice: '',
+//    ingredients: ['bread', 'water', 'solt'],
+//};
 //
-//}
-//console.log(expense);
+//let dish2 = {
+//    name: 'dishB',
+//    price: 40,
+//    cookingPrice: '',
+//    ingredients: ['sugar', 'flour'],
+//};
 //
-//let sumArray = (array) => {
-//    let sum = expense;
-//    for(let i = 0; i < array.length; i++){
-//        sum += array[i]
+//let dish3 = {
+//    name: 'dishC',
+//    price: 30,
+//    cookingPrice: '',
+//    ingredients: ['solt', 'sugar'],
+//};
+//
+//let consist = {
+//    bread: 10,
+//    water: 5,
+//    solt: 5,
+//    sugar: 10,
+//    flour: 10
+//};
+//
+//let dishs = [dish1, dish2, dish3];
+//
+//for (let i = 0; i < dishs.length; i++) {
+//    let vse = 0;
+//    for (q = 0; q < dishs[i].ingredients.length; q++) {
+//        vse += consist[dishs[i].ingredients[q]];
 //    }
-//    console.log(sum);
-//}
-//sumArray(arrayIngred);
-
-//let qwer = [1, 2, 3, 4, 5];
-//let sum = 0;
+//    dishs[i].cookingPrice = vse;
+//};
+//console.log(`${JSON.stringify(dishs)}`);
 //
-//for (let i = 0; i < qwer.length; i++) {
-//    sum += qwer[i];
-//}
-//console.log(sum)
-
-
-
-//for (let i = 0; i < dish.length; i++) {
-//    dish[0,1,2] += dish[0,1,2]
-//}
-//console.log(dish[i].ingridients);
-
-
-
-//let expenseBuuza = [meat, water, solt, onion,];
+//for (let i = 0; i < dishs.length; i++) {
+//    dishs[i].moznoyasvami = dishs[i].price - dishs[i].cookingPrice;
+//};
 //
-//let sumArray = (array) => {
-//    let sum = dish[i].ingridients;
-//    for(let i = 0; i < array.length; i++){
-//        sum += array[i]
-//    }
-//    console.log(sum);
+//console.log(`${JSON.stringify(dishs)}`);
+//
+//let interesno = 0;
+//for (let i = 0; i < dish1.ingredients.length; i++) {
+//    interesno += consist[dish1.ingredients[i]];
 //}
-//sumArray(dish);
-//let expense = sumArray(expenseBuuza);
-
-//let sumo = (cheese - sauce);
-//console.log(sumo);
-
-//let sumArray = (Array) => {
-//    let price = dish[i];
-//    for(let i = 0; i < Array.length; i++) {
-//        price -= Array[i]
-//    }
-//    console.log(price)
-//}
-//sumArray(dish);
+//console.log(interesno);

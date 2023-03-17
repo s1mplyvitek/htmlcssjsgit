@@ -35,7 +35,7 @@ let dish = [
     brtuch,
 ];
        
-let expense = {
+let expenseIng = {
     meat: 30,
     water: 5,
     solt: 5,
@@ -48,8 +48,8 @@ let expense = {
 
 for (let i = 0; i < dish.length; i++) {
     let sum = 0;
-    for (let s = 10; s < dish[i].ingridients.length; s++) {
-        sum += expense[dish[i].ingridients[s]];
+    for (let s = 0; s < dish[i].ingridients.length; s++) {
+        sum += expenseIng[dish[i].ingridients[s]];
     }
     dish[i].expense = sum;
 };
