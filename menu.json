@@ -1,6 +1,29 @@
 [
-	"buuza",
-	"blackSoup",
-	"brtuch",
-	"classicSalad"
+	{
+		"name": "buuza",
+		"price": 70,
+		"expense": 0,
+		"ingridients": ["meat",	"water", "solt", "onion"]
+	},
+
+	{
+		"name": "blackSoup",
+		"price": 100,
+		"expense": 0,
+		"ingridients": ["meat",	"water", "solt"]
+	},
+
+	{
+		"name": "brtuch",
+		"price": 150,
+		"expense": 0,
+		"ingridients": ["salad", "bread", "sauce", "meat", "cheese"]
+	},
+
+	{
+		"name": "classicSalad",
+		"price": 60,
+		"expense": 0,
+		"ingridients": ["salad", "onion", "solt", "cucmber"]
+	}
 ]
